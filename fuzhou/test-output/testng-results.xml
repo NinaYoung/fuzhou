@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="RQA_BE Tests" duration-ms="36618" started-at="2017-06-02T11:26:23Z" finished-at="2017-06-02T11:26:59Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="36618" started-at="2017-06-02T11:26:23Z" finished-at="2017-06-02T11:26:59Z">
+      <class name="com.octa.fuzhou.signup.SignupNegativeFlowTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.octa.fuzhou.signup.SignupNegativeFlowTest@7d61eb55]" name="setUp" is-config="true" duration-ms="60" started-at="2017-06-02T19:26:23Z" finished-at="2017-06-02T19:26:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="test(com.octa.fuzhou.data.signup.SignUpData)[pri:0, instance:com.octa.fuzhou.signup.SignupNegativeFlowTest@7d61eb55]" name="test" duration-ms="34623" started-at="2017-06-02T19:26:23Z" data-provider="SignupNegativeFlow" finished-at="2017-06-02T19:26:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ID: 00001, priority: P0, description: signup negative flow - 测试三个输入框的边界值以及密码的正确性]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.octa.fuzhou.signup.SignupNegativeFlowTest@7d61eb55]" name="tearDown" is-config="true" duration-ms="1403" started-at="2017-06-02T19:26:58Z" finished-at="2017-06-02T19:26:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.octa.fuzhou.signup.SignupNegativeFlowTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- RQA_BE Tests -->
+</testng-results>

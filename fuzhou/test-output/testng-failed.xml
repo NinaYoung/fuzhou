@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" configfailurepolicy="continue" verbose="2" name="Failed suite [RQA_BE Tests]" parallel="classes" data-provider-thread-count="1">
+  <parameter name="firefoxProfile" value="default"/>
+  <parameter name="browser" value="*firefox"/>
+  <parameter name="sshUser" value="yangna"/>
+  <parameter name="seleniumhost" value="localhost"/>
+  <parameter name="dataprovider_filter" value="id(00000)"/>
+  <test name="Default test(failed)" parallel="classes">
+    <classes>
+      <class name="com.octa.fuzhou.signup.SignupHappyFlowTest">
+        <methods>
+          <include name="test" invocation-numbers="0"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.octa.fuzhou.signup.SignupHappyFlowTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [RQA_BE Tests] -->

@@ -1,0 +1,15 @@
+---
+id: "00003"
+priority: "P0"
+description: "Login Happy Flow - 已注册的用户登陆成功"
+username: "fuzhou"
+password: "zaq123"
+confirmpwd: "zaq123"
+---
+id: "00004"
+priority: "P0"
+description: "Login negative Flow - 检测登录输入项"
+username: "fuzhou"
+password: "zaq123"
+confirmpwd: "zaq123"
+  
