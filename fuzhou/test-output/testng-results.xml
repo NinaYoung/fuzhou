@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="RQA_BE Tests" duration-ms="31266" started-at="2017-07-24T09:57:46Z" finished-at="2017-07-24T09:58:17Z">
+  <suite name="RQA_BE Tests" duration-ms="32795" started-at="2017-07-24T11:08:18Z" finished-at="2017-07-24T11:08:51Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="31266" started-at="2017-07-24T09:57:46Z" finished-at="2017-07-24T09:58:17Z">
+    <test name="Default test" duration-ms="32795" started-at="2017-07-24T11:08:18Z" finished-at="2017-07-24T11:08:51Z">
       <class name="cn.octa.fuzhou.login.LoginChangePasswordHappyFlowTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:cn.octa.fuzhou.login.LoginChangePasswordHappyFlowTest@638ef7ed]" name="setUp" is-config="true" duration-ms="25" started-at="2017-07-24T17:57:46Z" finished-at="2017-07-24T17:57:46Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:cn.octa.fuzhou.login.LoginChangePasswordHappyFlowTest@7283d3eb]" name="setUp" is-config="true" duration-ms="679" started-at="2017-07-24T19:08:18Z" finished-at="2017-07-24T19:08:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="test(cn.octa.fuzhou.data.ChangePasswordData)[pri:0, instance:cn.octa.fuzhou.login.LoginChangePasswordHappyFlowTest@638ef7ed]" name="test" duration-ms="30471" started-at="2017-07-24T17:57:46Z" data-provider="LoginChangePasswordHappyFlow" finished-at="2017-07-24T17:58:16Z">
+        <test-method status="PASS" signature="test(cn.octa.fuzhou.data.ChangePasswordData)[pri:0, instance:cn.octa.fuzhou.login.LoginChangePasswordHappyFlowTest@7283d3eb]" name="test" duration-ms="31243" started-at="2017-07-24T19:08:19Z" data-provider="LoginChangePasswordHappyFlow" finished-at="2017-07-24T19:08:50Z">
           <params>
             <param index="0">
               <value>
@@ -22,7 +22,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:cn.octa.fuzhou.login.LoginChangePasswordHappyFlowTest@638ef7ed]" name="tearDown" is-config="true" duration-ms="628" started-at="2017-07-24T17:58:16Z" finished-at="2017-07-24T17:58:17Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:cn.octa.fuzhou.login.LoginChangePasswordHappyFlowTest@7283d3eb]" name="tearDown" is-config="true" duration-ms="716" started-at="2017-07-24T19:08:50Z" finished-at="2017-07-24T19:08:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
