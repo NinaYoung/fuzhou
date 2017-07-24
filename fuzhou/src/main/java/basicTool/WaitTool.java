@@ -8,6 +8,7 @@ import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class WaitTool {
@@ -153,6 +154,24 @@ public class WaitTool {
             }
         }, timeOutInSeconds);
 
+    }
+    
+    /**
+     * Wait for an expected element invisible.
+     * 
+     * @param driver
+     *            The driver object to be used
+     * @param webElement
+     *            The time in seconds to wait until returning a failure
+     * @throws TimeoutException
+     *             if the timeout expires
+     * @throws RuntimeException
+     *             Wait will ignore instances of NotFoundException that are encountered (thrown) by default in the
+     *             'until' condition, BUT immediately propagate all others.
+     */
+    public static void waitUnitElementIsInvisible(WebDriver driver, By elementLocator){
+    	ExpectedCondition<Boolean> condition = ExpectedConditions.invisibilityOfElementLocated(elementLocator);
+    	waitFor(driver, condition);
     }
 
     /**

@@ -64,7 +64,6 @@ public class SelectList {
 
     public void selectByIndex(int index) throws Exception {
         clickOnDropDown();
-      //  WebReporter.log(driver, driver.getTitle(), true, true);
         List<WebElement> optionElements = driver.findElements(menuItemBy);
         if (optionElements.size() == 0)
             throw new Exception("The expected option is not listed in select list options");
@@ -85,7 +84,7 @@ public class SelectList {
 
     public void clickOnDropDown() {
         try {
-            WebElement dijitArrowButton = selectButton.findElement(dropDownArrowBy);
+            WebElement dijitArrowButton = driver.findElement(dropDownArrowBy);
             dijitArrowButton.click();
         } catch (Exception e) {
             selectButton.click();
@@ -94,8 +93,7 @@ public class SelectList {
             WaitTool.waitFor(driver, ExpectedConditions.visibilityOfElementLocated(menuItemBy),
                     WaitTool.DEFAULT_WAIT_4_ELEMENT);
         } catch (Exception e) {
-            WebElement dijitArrowButton = selectButton.findElement(dropDownArrowBy);
-            dijitArrowButton.click();
+        	selectButton.click();
             WaitTool.waitFor(driver, ExpectedConditions.visibilityOfElementLocated(menuItemBy),
                     WaitTool.DEFAULT_WAIT_4_ELEMENT);
         }
@@ -105,7 +103,7 @@ public class SelectList {
     public void clickOnDropDownWithoutWait() {
         try {
             // driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
-            WebElement dijitArrowButton = selectButton.findElement(dropDownArrowBy);
+            WebElement dijitArrowButton = driver.findElement(dropDownArrowBy);
             dijitArrowButton.click();
         } catch (Exception e) {
             selectButton.click();
@@ -114,7 +112,7 @@ public class SelectList {
 
     public String getSelectedValue() {
         try {
-            List<WebElement> dijitValidationTextBoxLabel = selectButton.findElements(textBoxLabelBy);
+            List<WebElement> dijitValidationTextBoxLabel = driver.findElements(textBoxLabelBy);
             return dijitValidationTextBoxLabel.get(0).getText();
         } catch (Exception e) {
             return selectButton.getText();
@@ -130,6 +128,7 @@ public class SelectList {
         for (WebElement optionElement : optionElements) {
             menuItemElements.add(optionElement.getText());
         }
+        clickOnDropDownWithoutWait();
         return menuItemElements;
     }
 

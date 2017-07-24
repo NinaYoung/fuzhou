@@ -8,13 +8,13 @@
   <parameter name="dataprovider_filter" value="id(00000)"/>
   <test name="Default test(failed)" parallel="classes">
     <classes>
-      <class name="com.octa.fuzhou.signup.SignupHappyFlowTest">
+      <class name="com.octa.fuzhou.database.DatabaseAddDBHappyFlowTest">
         <methods>
-          <include name="test" invocation-numbers="0"/>
           <include name="setUp"/>
+          <include name="test" invocation-numbers="0"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.octa.fuzhou.signup.SignupHappyFlowTest -->
+      </class> <!-- com.octa.fuzhou.database.DatabaseAddDBHappyFlowTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [RQA_BE Tests] -->

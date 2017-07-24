@@ -24,9 +24,11 @@ import basicTool.frame.FrameNavigator;
  * @author YN
  *
  */
-public class AbstractPage {
+public class AbstractPage{
 
-    protected WebDriver driver;
+  
+
+	protected WebDriver driver;
     public static final int DefaultWaitElementTime4Page = 60;
     protected final FrameNavigator frameNavigator;
 
@@ -40,7 +42,6 @@ public class AbstractPage {
      *             if the timeout expires
      * 
      */
-
     protected AbstractPage(WebDriver driver) {
         this.driver = driver;
         this.frameNavigator = new FrameNavigator(driver, this);
@@ -91,7 +92,16 @@ public class AbstractPage {
     private void clickBefore() throws IOException{
     	File screenShotFile =((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
     	long date = new Date().getTime();
-    	FileUtils.copyFile(screenShotFile, new File("fuzhou/test-output/screenshots/"+ date +".png"));
+    	FileUtils.copyFile(screenShotFile, new File("test-output/screenshots/"+ date +".png"));
+    }
+    /**
+     * take a screenshot after click to show the original page
+     * @throws IOException
+     */
+    private void clickAfter() throws IOException{
+    	File screenShotFile =((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+    	long date = new Date().getTime();
+    	FileUtils.copyFile(screenShotFile, new File("test-output/screenshots/"+ date +".png"));
     }
     
     /**
@@ -120,6 +130,7 @@ public class AbstractPage {
     protected <W extends AbstractPage> W click(WebElement element, Class<W> nextPageClass) throws Exception {
     	clickBefore();
         click(element);
+        clickAfter();
         return nextPageClass.getDeclaredConstructor(WebDriver.class).newInstance(this.driver);
     }
 
@@ -136,6 +147,7 @@ public class AbstractPage {
     protected WebElement click(WebElement element, WebElement expectedElement) throws Exception {
     	clickBefore();
         click(element);
+        clickAfter();
         return ((WebElement) WaitTool.waitFor(this.driver, ExpectedConditions.visibilityOf(expectedElement),
                 WaitTool.getDefaultWait4Page()));
     }

@@ -1,21 +1,21 @@
 package basicClass;
 
 /**
- * balic data in yaml file
+ * basic data in yaml file
  * @author YN
  *
  */
 public class AbstractData {
 	
-	private final static String URL = "http://192.168.1.217:8099/#/login?_k=pct8jh";
+	private final static String URL = "http://192.168.1.239:8099/#/login?_k=pct8jh";
 	
 	private String id;
 	private String priority;
 	private String description;
 
-	private String username;
-	private String password;
-	private String confirmpwd;
+	private String username = "admins";
+	private String password = "admins";
+	private String confirmpwd = "123456";
 	
 	public String getUsername() {
 		return username;

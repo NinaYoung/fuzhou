@@ -9,6 +9,11 @@ import basicTool.WaitTool;
 
 public class LoginPage extends AbstractPage {
 	
+	public LoginPage(WebDriver driver) {
+		super(driver);
+		WaitTool.waitFor(driver, WaitTool.DEFAULT_WAIT_4_ELEMENT, userNameTextField);
+	}
+	
 	@FindBy(css = "#login-box #username")
 	private WebElement userNameTextField;
 	
@@ -30,8 +35,6 @@ public class LoginPage extends AbstractPage {
 	@FindBy(css = "#login-box div.checkpasses")
 	private WebElement checkPasswordLoginLabel;
 
-	
-	
 	public WebElement getCheckUserLabel() {
 		return checkUserLabel;
 	}
@@ -53,9 +56,5 @@ public class LoginPage extends AbstractPage {
 	public WebElement getSignupFirstButton() {
 		return signupFirstButton;
 	}
-	public LoginPage(WebDriver driver) {
-		super(driver);
-		WaitTool.waitFor(driver, WaitTool.DEFAULT_WAIT_4_ELEMENT, userNameTextField);
-	}
-
+	
 }

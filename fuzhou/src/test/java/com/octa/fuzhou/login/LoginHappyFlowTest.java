@@ -1,16 +1,14 @@
 package com.octa.fuzhou.login;
 
-import static org.testng.Assert.assertTrue;
-
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.octa.fuzhou.data.signup.SignUpData;
 import com.octa.fuzhou.page.extend.HomePageExt;
 import com.octa.fuzhou.page.extend.LoginPageExt;
+import com.octa.fuzhou.page.extend.TrustedAuditPageExt;
 
 import basicClass.AbstractTest;
-import basicTool.WaitTool;
 import dataTool.DataFactory;
 
 public class LoginHappyFlowTest extends AbstractTest{
@@ -31,6 +29,11 @@ public class LoginHappyFlowTest extends AbstractTest{
 		//WaitTool.waitFor(driver, WaitTool.DEFAULT_WAIT_4_ELEMENT, homePageExt.getWelcomeButton());
 		takeScreenshot(driver.getTitle());
 		
+//		DataBasePageExt dataBasePageExt = homePageExt.gotoDataBasePage();
+//		dataBasePageExt.checkHostList().showDataBaseList(0);
+//		dataBasePageExt.generateHostListContainer();
+//		
+		
 		// prepare for moving to canvas
 		
 //		WaitTool.waitFor(driver, WaitTool.DEFAULT_WAIT_4_ELEMENT, homePageExt.getWelcomeButton());
@@ -39,6 +42,7 @@ public class LoginHappyFlowTest extends AbstractTest{
 //		Actions action = new Actions(driver);
 //		action.moveToElement(homePageExt.getTotalAttackLabel()).click().perform();
 		
+//		TrustedAuditPageExt trustedAuditPageExt = homePageExt.gotoTrustedAuditPage();
 		
 	}
 }

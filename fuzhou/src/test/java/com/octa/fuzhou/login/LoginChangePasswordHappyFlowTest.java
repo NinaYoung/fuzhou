@@ -30,21 +30,14 @@ public class LoginChangePasswordHappyFlowTest extends AbstractTest{
 		homePageExt.clickWelcomeButton();
 		homePageExt.gotoChangePassword();
 		
-		// Click cancel button
-		homePageExt.cancelChangePassword();
-		
-		homePageExt.clickWelcomeButton();
-		homePageExt.gotoChangePassword();
-		
-		// Click X
-		homePageExt.xToCancelChangePassword();
-		
-		homePageExt.clickWelcomeButton();
-		homePageExt.gotoChangePassword();
-		
         // Change password
-        homePageExt.ChangePassword(data.getPassword(), data.getNewPassword(), data.getConfirmNewPwd());
-		
-        takeScreenshot(driver.getTitle());
+        homePageExt.changePassword(data.getPassword(), data.getNewPassword(), data.getConfirmNewPwd());
+        homePageExt.clickMsgOkButton();
+        
+        // Logout 
+        homePageExt.logout();
+        
+        // Login again 
+        loginPageExt.loginToHomePage(data.getUsername(), data.getNewPassword());
 	}
 }

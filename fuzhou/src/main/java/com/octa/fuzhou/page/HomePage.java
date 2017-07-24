@@ -4,75 +4,63 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-import basicClass.AbstractPage;
+import com.octa.fuzhou.page.extend.BasePageExt;
+
 import basicTool.WaitTool;
 
-public class HomePage extends AbstractPage{
+public class HomePage extends BasePageExt{
 
-	protected HomePage(WebDriver driver) {
+	public HomePage(WebDriver driver) {
 		super(driver);
-		WaitTool.waitFor(driver, WaitTool.DEFAULT_WAIT_4_ELEMENT, welcomeButton);
+		WaitTool.waitFor(driver, WaitTool.DEFAULT_WAIT_4_ELEMENT, repairButton);
 	}
-
-	public final String TITLE = "欢迎您";
 	
-	@FindBy(css = "#basic-nav-dropdown")
-	private WebElement welcomeButton;
-
-	@FindBy(css = "ul.dropdown-menu > li:first-child a")
-	private WebElement changePasswordButton;
-	
-	@FindBy(css = "ul.dropdown-menu > li:last-child a")
-	private WebElement logoutButton;
-	
+	//每日拦截威胁次数图表
 	@FindBy(css = "#Totalattack canvas")
 	private WebElement totalAttackLabel;
 	
+	//攻击类型统计
 	@FindBy(css = "#typeAttack canvas")
 	private WebElement typeAttackLabel;
 	
+	//地理位置相关图标
 	@FindBy(css = "#worldMap canvas")
 	private WebElement worldMapLabel;
 	
+	//攻击来源占比图表
+	@FindBy(css = "#first-chart canvas")
+	private WebElement attackSourceLabel;
+	
+	//防御安全雷达图
 	@FindBy(css = "#radarChart canvas")
 	private WebElement radarChartLabel;
 	
-	@FindBy(css = "#Password:last-child")
-	private WebElement currentPwdTextField;
-
-	@FindBy(css = "input#newPassword:last-child")
-	private WebElement newPasswordTextField;
+	//可信修复
+	@FindBy(css = ".repair a")
+	private WebElement repairButton;
 	
-	@FindBy(css = "input#confirmPassword:last-child")
-	private WebElement confirmPwdTextField;
+	//可信优化
+	@FindBy(css = ".optimize a")
+	private WebElement optimizeButton;
 	
-	@FindBy(css = ".modalCancelBtn")
-	private WebElement cancelButton;
+	//修复漏洞
+	@FindBy(css = ".loophole a")
+	private WebElement loopholeButton;
 	
-	@FindBy(css = ".modalSubmitBtn")
-	private WebElement submitButton;
+	//pullHeader 部分的可信修复，可信优化，修复漏洞按钮
+	@FindBy(css = ".pullHeader div.operation a:first-child")
+	private WebElement repairPullHeaderButton;
 	
-	@FindBy(css = ".close")
-	private WebElement xButton;
+	@FindBy(css = ".pullHeader div.operation a:nth-child(2)")
+	private WebElement optimizePullHeaderButton;
 	
-	public WebElement getxButton() {
-		return xButton;
-	}
-	public WebElement getCurrentPwdTextField() {
-		return currentPwdTextField;
-	}
-	public WebElement getNewPasswordTextField() {
-		return newPasswordTextField;
-	}
-	public WebElement getConfirmPwdTextField() {
-		return confirmPwdTextField;
-	}
-	public WebElement getCancelButton() {
-		return cancelButton;
-	}
-	public WebElement getSubmitButton() {
-		return submitButton;
-	}
+	@FindBy(css = ".pullHeader div.operation a:last-child")
+	private WebElement loopholePullHeaderButton;
+	
+	//右下角全球云健康球
+	@FindBy(css = ".totalScoreBox div.map-score")
+	private WebElement mapScoreLabel;
+	
 	public WebElement getTypeAttackLabel() {
 		return typeAttackLabel;
 	}
@@ -88,13 +76,29 @@ public class HomePage extends AbstractPage{
 	public String getTITLE() {
 		return TITLE;
 	}
-	public WebElement getWelcomeButton() {
-		return welcomeButton;
+	public WebElement getAttackSourceLabel() {
+		return attackSourceLabel;
 	}
-	public WebElement getChangePasswordButton() {
-		return changePasswordButton;
+	public WebElement getRepairButton() {
+		return repairButton;
 	}
-	public WebElement getLogoutButton() {
-		return logoutButton;
+	public WebElement getOptimizeButton() {
+		return optimizeButton;
 	}
+	public WebElement getLoopholeButton() {
+		return loopholeButton;
+	}
+	public WebElement getRepairPullHeaderButton() {
+		return repairPullHeaderButton;
+	}
+	public WebElement getOptimizePullHeaderButton() {
+		return optimizePullHeaderButton;
+	}
+	public WebElement getLoopholePullHeaderButton() {
+		return loopholePullHeaderButton;
+	}
+	public WebElement getMapScoreLabel() {
+		return mapScoreLabel;
+	}
+	
 }
