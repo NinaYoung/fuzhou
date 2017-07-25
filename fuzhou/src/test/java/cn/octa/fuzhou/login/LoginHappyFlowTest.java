@@ -41,7 +41,6 @@ public class LoginHappyFlowTest extends AbstractTest{
 //		Actions action = new Actions(driver);
 //		action.moveToElement(homePageExt.getTotalAttackLabel()).click().perform();
 		
-//		TrustedAuditPageExt trustedAuditPageExt = homePageExt.gotoTrustedAuditPage();
 		
 	}
 }
