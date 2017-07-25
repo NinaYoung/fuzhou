@@ -2,27 +2,27 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="RQA_BE Tests" duration-ms="32795" started-at="2017-07-24T11:08:18Z" finished-at="2017-07-24T11:08:51Z">
+  <suite name="RQA_BE Tests" duration-ms="32644" started-at="2017-07-25T09:28:57Z" finished-at="2017-07-25T09:29:30Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="32795" started-at="2017-07-24T11:08:18Z" finished-at="2017-07-24T11:08:51Z">
+    <test name="Default test" duration-ms="32644" started-at="2017-07-25T09:28:57Z" finished-at="2017-07-25T09:29:30Z">
       <class name="cn.octa.fuzhou.login.LoginChangePasswordHappyFlowTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:cn.octa.fuzhou.login.LoginChangePasswordHappyFlowTest@7283d3eb]" name="setUp" is-config="true" duration-ms="679" started-at="2017-07-24T19:08:18Z" finished-at="2017-07-24T19:08:19Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:cn.octa.fuzhou.login.LoginChangePasswordHappyFlowTest@5e21e98f]" name="setUp" is-config="true" duration-ms="2041" started-at="2017-07-25T17:28:57Z" finished-at="2017-07-25T17:28:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="test(cn.octa.fuzhou.data.ChangePasswordData)[pri:0, instance:cn.octa.fuzhou.login.LoginChangePasswordHappyFlowTest@7283d3eb]" name="test" duration-ms="31243" started-at="2017-07-24T19:08:19Z" data-provider="LoginChangePasswordHappyFlow" finished-at="2017-07-24T19:08:50Z">
+        <test-method status="PASS" signature="test(cn.octa.fuzhou.data.ChangePasswordData)[pri:0, instance:cn.octa.fuzhou.login.LoginChangePasswordHappyFlowTest@5e21e98f]" name="test" duration-ms="29768" started-at="2017-07-25T17:28:59Z" data-provider="LoginChangePasswordHappyFlow" finished-at="2017-07-25T17:29:29Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[ID: fz-5, priority: P1, description: Change password happy flow - ÐÞ¸ÄÃÜÂë³É¹¦]]>
+                <![CDATA[ID: fz-5, priority: P1, description: Change password happy flow - ä¿®æ”¹å¯†ç æˆåŠŸ]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:cn.octa.fuzhou.login.LoginChangePasswordHappyFlowTest@7283d3eb]" name="tearDown" is-config="true" duration-ms="716" started-at="2017-07-24T19:08:50Z" finished-at="2017-07-24T19:08:51Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:cn.octa.fuzhou.login.LoginChangePasswordHappyFlowTest@5e21e98f]" name="tearDown" is-config="true" duration-ms="662" started-at="2017-07-25T17:29:29Z" finished-at="2017-07-25T17:29:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

@@ -24,11 +24,6 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="D:/selenium/2.48/selenium-server-standalone-2.48.0.jar"/>
-	<classpathentry kind="lib" path="D:/selenium/2.48/selenium-java-2.48.1.jar"/>
-	<classpathentry kind="lib" path="D:/selenium/2.48/selenium-java-2.48.1-srcs.jar"/>
-	<classpathentry kind="lib" path="D:/selenium/2.48/selenium-server-2.48.0.jar"/>
-	<classpathentry kind="lib" path="D:/selenium/2.48/selenium-server-2.48.0-srcs.jar"/>
 	<classpathentry kind="lib" path="C:/Users/pc-4/Desktop/jar包/commons-configuration-1.10.jar"/>
 	<classpathentry kind="lib" path="C:/Users/pc-4/Desktop/jar包/commons-lang-2.4.jar"/>
 	<classpathentry kind="lib" path="C:/Users/pc-4/Desktop/jar包/mysql-connector-java.jar"/>
