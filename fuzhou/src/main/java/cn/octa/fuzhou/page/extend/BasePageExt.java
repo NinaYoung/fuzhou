@@ -56,8 +56,11 @@ public class BasePageExt extends BasePage {
 	 *            - confirm the new password
 	 */
 	protected void fill(String currentPassword, String newPassword, String confirmPwd){
+		getCurrentPwdTextField().clear();
 		getCurrentPwdTextField().sendKeys(currentPassword);
+		getNewPasswordTextField().clear();
 		getNewPasswordTextField().sendKeys(newPassword);
+		getConfirmPwdTextField().clear();
         getConfirmPwdTextField().sendKeys(confirmPwd);
 	}
 	
@@ -73,10 +76,10 @@ public class BasePageExt extends BasePage {
 	 *        confirm change password successfully button
 	 * @throws Exception
 	 */
-	public WebElement changePassword(String currentPassword, String newPassword, String confirmPwd) throws Exception{
+	public BasePageExt changePassword(String currentPassword, String newPassword, String confirmPwd) throws Exception{
 		
 		fill(currentPassword, newPassword, confirmPwd);
-		return click(getSubmitButton(), getMsgOkButton());
+		return click(getSubmitButton(), BasePageExt.class);
 	}
 	
 	/**
