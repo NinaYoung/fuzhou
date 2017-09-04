@@ -1,0 +1,24 @@
+what,kind,bundleId,bundleVersion,description,time
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1493690279630
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1493690292116
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.window.preferences",1493690292131
+started,bundle,org.eclipse.epp.mpc.core,1.1.1.I20110907-0947,"org.eclipse.epp.mpc.core",1493690295350
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1493690296132
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1493690299601
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1493690301210
+started,bundle,org.eclipse.equinox.p2.ui,2.1.1.v20120113-1346,"org.eclipse.equinox.p2.ui",1493690301289
+started,bundle,org.eclipse.equinox.p2.ui.sdk,1.0.200.v20110815-1419,"org.eclipse.equinox.p2.ui.sdk",1493690301320
+error,log,,,"Unexpected exception: null",1493690470511
+started,bundle,org.eclipse.equinox.p2.garbagecollector,1.0.200.v20110815-1419,"org.eclipse.equinox.p2.garbagecollector",1493690669099
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1493690854041
+executed,command,org.eclipse.epp.mpc.ui,1.1.1.I20110907-0947,"org.eclipse.epp.mpc.ui.command.showMarketplaceWizard",1493690854060
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1493690855335
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1493690856581
+closed,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1493690856802
+started,bundle,org.eclipse.compare.core,3.5.200.I20110208-0800,"org.eclipse.compare.core",1493690857441
+started,bundle,org.eclipse.compare,3.5.202.R37x_v20111109-0800,"org.eclipse.compare",1493690857461
+started,bundle,org.eclipse.ltk.core.refactoring,3.5.201.r372_v20111101-0700,"org.eclipse.ltk.core.refactoring",1493690857578
+started,bundle,org.eclipse.ltk.ui.refactoring,3.6.0.v20110928-1453,"org.eclipse.ltk.ui.refactoring",1493690857590
+stopped,bundle,org.eclipse.jst.ws.axis.creation.ui,1.0.700.v201104070312,"org.eclipse.jst.ws.axis.creation.ui",1493690857811
+stopped,bundle,org.eclipse.jst.ws.axis.consumption.ui,1.0.505.v201004211805,"org.eclipse.jst.ws.axis.consumption.ui",1493690857822
+stopped,bundle,org.eclipse.jst.ws.axis.consumption.core,1.0.407.v201104071820,"org.eclipse.jst.ws.axis.consumption.core",1493690857837

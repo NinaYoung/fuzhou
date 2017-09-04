@@ -1,0 +1,9 @@
+---
+id: "fz-10"
+priority: "P0"
+description: "Happy Flow - 添加数据库"
+dbName: "fz_"
+dbType: "PostgreSQL"
+ip: "192.168.1.181"
+dbUser: "8lab"
+dbPassword: "8lab"

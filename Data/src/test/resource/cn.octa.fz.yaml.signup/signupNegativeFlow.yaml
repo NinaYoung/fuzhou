@@ -1,0 +1,7 @@
+---
+id: "fz-2"
+priority: "P0"
+description: "signup negative flow - 测试三个输入框的边界值以及密码的正确性"
+username: "fuzhou_test"
+password: "123456"
+confirmpwd: "123456"

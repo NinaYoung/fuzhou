@@ -1,0 +1,7 @@
+---
+id: "fz-3"
+priority: "P0"
+description: "signup duplicated - 测试同一用户不能注册两次"
+username: "du_"
+password: "123456"
+confirmpwd: "123456"

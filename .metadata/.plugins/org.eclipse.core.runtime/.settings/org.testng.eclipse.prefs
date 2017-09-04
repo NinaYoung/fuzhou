@@ -1,0 +1,7 @@
+Data.outdir=/test-output
+Test.outdir=/test-output
+TestxmlTemplateFile=C\:\\Users\\pc-4\\workspace\\Test\\testngConfig.xml
+eclipse.preferences.version=1
+fuzhou.outdir=/test-output
+fuzhouxmlTemplateFile=C\:\\Users\\pc-4\\workspace\\fuzhou\\testngConfig.xml
+xmlTemplateFile=C\:\\Users\\pc-4\\workspace\\fuzhou\\testngConfig.xml

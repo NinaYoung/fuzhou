@@ -1,0 +1,7 @@
+---
+id: "fz-55"
+priority: "P0"
+description: "WAF攻击 - Alarm状态"
+hostname: "client_b"
+dvwa: "http://192.168.1.239/shoot/index.php"
+status: "alarm"

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+<typeInfo handle="=Core/src\/main\/java&lt;basicClass{BasePage.java[BasePage" modifiers="1" timestamp="1503475280382"/>
+<typeInfo handle="=Test/src\/main\/java&lt;basicClass{AbstractTest.java[AbstractTest" modifiers="1" timestamp="1502164161611"/>
+<typeInfo handle="=Data/src\/main\/java&lt;basicClass{AbstractData.java[AbstractData" modifiers="1" timestamp="1503483469149"/>
+<typeInfo handle="=Core/src\/main\/java&lt;cn.octa.fz.page{WAFPage.java[WAFPage" modifiers="1" timestamp="1503487141642"/>
+<typeInfo handle="=Core/src\/main\/java&lt;dvwa{DVWALoginPage.java[DVWALoginPage" modifiers="1" timestamp="1503487435484"/>
+<typeInfo handle="=Core/src\/main\/java&lt;dvwa{DVWABasePage.java[DVWABasePage" modifiers="1" timestamp="1503481293379"/>
+<typeInfo handle="=Core/src\/main\/java&lt;dvwa{DVWASecurityPage.java[DVWASecurityPage" modifiers="1" timestamp="1503485574685"/>
+<typeInfo handle="=Core/src\/main\/java&lt;dvwa{DVWASqliPage.java[DVWASqliPage" modifiers="1" timestamp="1503481336292"/>
+</typeInfoHistroy>

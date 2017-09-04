@@ -1,0 +1,7 @@
+package cn.octa.fz.database;
+
+import basicClass.AbstractTest;
+
+public class DatabaseAddPGHappyFlowTest extends AbstractTest {
+
+}
